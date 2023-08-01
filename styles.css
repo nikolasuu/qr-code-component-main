@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+body {
+  background-color: hsl(214, 40%, 89%);
+  font-family: "Outfit";
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container {
+  margin: 0 auto 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 2rem;
+  max-width: fit-content;
+}
+
+.qr-page {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 375px;
+  max-height: fit-content;
+}
+
+.qr-image {
+  border-radius: 1rem;
+  background-image: url("./images/image-qr-code.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(220, 15%, 55%);
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.description {
+  max-inline-size: 576px;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.paragraph {
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .description {
+    max-inline-size: 375px;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .paragraph {
+    opacity: 0.5;
+    font-size: 1rem;
+  }
+}
